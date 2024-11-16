@@ -220,6 +220,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -263,6 +264,8 @@ img {
 
 .footer-highlight {
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
