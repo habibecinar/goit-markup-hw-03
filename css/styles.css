@@ -224,7 +224,7 @@ img {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100%-72px) / 4);
   text-align: center;
 }
 
@@ -253,6 +253,7 @@ img {
   background-color: #2e2f42;
   text-align: center;
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-logo {
