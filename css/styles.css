@@ -7,24 +7,18 @@
   padding: 0;
 }
 
+/* Siteye Genel Stil */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
-/* Global Etiket Sıfırlama */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* Tüm Resimler İçin Stil */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Container Sınıfı */
@@ -35,8 +29,8 @@ ul {
   padding: 0 15px;
 }
 
-/* Header ve Navigasyon */
-.header {
+/* Header */
+.main-header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -44,7 +38,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .logo-link {
@@ -53,13 +46,13 @@ ul {
   font-size: 24px;
   color: #4d5ae5;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .logo-highlight {
   color: #2e2f42;
 }
 
-/* Navigasyon Linkleri */
 .nav-list {
   display: flex;
   gap: 40px;
@@ -70,14 +63,12 @@ ul {
 }
 
 .nav-link {
-  font-weight: 500;
-  font-size: 18px;
   color: #2e2f42;
+  font-size: 18px;
   text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover {
   color: #404bbf;
 }
 
@@ -92,18 +83,12 @@ ul {
   gap: 40px;
 }
 
-.contact-item {
-  font-size: 16px;
-}
-
-.contact-email,
-.contact-phone {
+.contact-item a {
   color: #434455;
   text-decoration: none;
 }
 
-.contact-email:hover,
-.contact-phone:hover {
+.contact-item a:hover {
   color: #404bbf;
 }
 
@@ -117,7 +102,6 @@ ul {
 
 .hero-title {
   font-size: 56px;
-  line-height: 1.2;
   max-width: 496px;
   margin: 0 auto 24px;
 }
@@ -126,7 +110,6 @@ ul {
   display: block;
   margin: 0 auto;
   padding: 15px 30px;
-  font-size: 18px;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
@@ -148,22 +131,21 @@ ul {
 
 .section-title {
   font-size: 36px;
-  text-align: center;
   margin-bottom: 72px;
+  text-align: center;
 }
 
 .services-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .service-item {
   flex-basis: calc((100% - 72px) / 4);
-  background-color: #ffffff;
   padding: 32px;
+  background-color: #fff;
   border: 1px solid #e7e9fc;
-  border-top: none;
   border-radius: 4px;
   text-align: center;
 }
@@ -171,7 +153,6 @@ ul {
 .service-heading {
   font-size: 24px;
   margin-bottom: 8px;
-  color: #2e2f42;
 }
 
 .service-text {
@@ -187,8 +168,8 @@ ul {
 
 .team-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .team-member {
@@ -197,22 +178,18 @@ ul {
 }
 
 .team-photo {
-  width: 100%;
   max-width: 264px;
   border-radius: 4px;
 }
 
 .member-name {
   font-size: 20px;
-  margin-bottom: 8px;
-  color: #2e2f42;
-  text-align: center;
+  margin: 16px 0 8px;
 }
 
 .member-role {
   font-size: 16px;
   color: #434455;
-  text-align: center;
 }
 
 /* Portföy Bölümü */
@@ -223,9 +200,8 @@ ul {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
-  row-gap: 48px;
+  gap: 24px;
 }
 
 .portfolio-item {
@@ -234,34 +210,27 @@ ul {
 }
 
 .portfolio-img {
-  width: 100%;
-  max-width: 360px;
   border-radius: 4px;
 }
 
 .project-title {
   font-size: 20px;
   margin: 16px 0 8px;
-  color: #2e2f42;
 }
 
 .project-category {
   font-size: 16px;
-  color: #434455;
 }
 
-/* Footer Bölümü */
+/* Footer */
 .site-footer {
-  background-color: #2e2f42;
   padding: 100px 0;
-  color: #f4f4fd;
+  background-color: #2e2f42;
   text-align: center;
+  color: #f4f4fd;
 }
 
 .footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
   color: #4d5ae5;
   text-decoration: none;
 }
@@ -271,10 +240,9 @@ ul {
 }
 
 .footer-text {
-  font-size: 16px;
   max-width: 264px;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin: 16px auto 0;
+  font-size: 16px;
 }
 
 /* Görsel Gizleme */
